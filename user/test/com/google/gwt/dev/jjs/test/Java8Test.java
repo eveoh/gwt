@@ -331,4 +331,8 @@ public class Java8Test extends GWTTestCase {
   private boolean isGwtSourceLevel8() {
     return JUnitShell.getCompilerOptions().getSourceLevel().compareTo(SourceLevel.JAVA8) >= 0;
   }
+  public void testImproperMethodResolution() {
+    assertFalse(isGwtSourceLevel9());
+  }
+
 }
